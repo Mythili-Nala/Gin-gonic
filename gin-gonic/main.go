@@ -23,8 +23,8 @@ type Note struct {
 func dbConn() (db *sql.DB) {
 	dbDriver := "mysql"
 	dbUser := "root"
-	dbPass := "groot@123"
-	dbName := "note_db"
+	dbPass := "password"
+	dbName := "db"
 	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@(localhost:3306)/"+dbName)
 	if err != nil {
 		panic(err.Error())
